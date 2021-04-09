@@ -69,15 +69,10 @@ public class Documents {
 
     @Override
     public String toString() {
-        return "Documents{" +
-                "ISBN=" + ISBN +
-                ", titre='" + titre + '\'' +
-                ", auteurs='" + auteurs + '\'' +
-                ", editeur='" + editeur + '\'' +
-                ", ann_edition=" + ann_edition +
-                ", nb_exp=" + nb_exp +
-                '}';
+        return "Documents{\n" +
+                "  ISBN:              "+getISBN()+"\n  Title:             "+getTitre()+"\n  Table of Authors:  "+getAuteurs()+"\n  Aditor:            " +getEditeur() +"\n  Number of copies:  "+getNb_exp()+"\n  Year of edition:   "+getAnn_edition()+"\n";
     }
+
     public  String getInfo(){
         return "  ISBN:              "+getISBN()+"\n  Title:             "+getTitre()+"\n  Table of Authors:  "+getAuteurs()+"\n  Aditor:            " +getEditeur() +"\n  Number of copies:  "+getNb_exp()+"\n  Year of edition:   "+getAnn_edition()+"\n";
     }

@@ -44,9 +44,7 @@ public class MenuUtil_Pro {
             for (int i = 0; i < Bibliotheque.emprunteursP.length; i++) {
                 Professeur pro = Bibliotheque.emprunteursP[i];
                 if (pro!=null && pro.getCin().equalsIgnoreCase(cin)) {
-                    System.out.println(pro.toString());
-                } else {
-                    System.out.println("Professor not found\n");
+                    System.out.println(pro.getInfo_Prof());
                 }
             }
         }

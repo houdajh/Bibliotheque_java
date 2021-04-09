@@ -61,9 +61,6 @@ public class MenuUtil_Doc {
             if(doc!=null && doc.getTitre().equalsIgnoreCase(find) ){
                 System.out.println(doc.getInfo());
             }
-            else {
-                System.out.println("Document not found\n");
-            }
         }
     }
     //chercher un document par le nom d'auteur
@@ -73,9 +70,6 @@ public class MenuUtil_Doc {
             Documents doc= Bibliotheque.documents[i];
             if(doc!=null &&doc.getAuteurs().equalsIgnoreCase(find) ){
                 System.out.println(doc.getInfo());
-            }
-            else {
-                System.out.println("Document not found\n");
             }
         }
     }
@@ -87,9 +81,6 @@ public class MenuUtil_Doc {
             if(doc!=null &&doc.getISBN()==find ){
                 System.out.println(doc.getInfo());
             }
-            else {
-                System.out.println("Document not found\n");
-            }
         }
     }
 //chercher un document par le nom d'editeur
@@ -99,9 +90,6 @@ public class MenuUtil_Doc {
             Documents doc= Bibliotheque.documents[i];
             if(doc!=null &&doc.getEditeur().equalsIgnoreCase(find) ){
                 System.out.println(doc.getInfo());
-            }
-            else {
-                System.out.println("Document not found\n");
             }
         }
     }
@@ -113,7 +101,6 @@ public class MenuUtil_Doc {
         Bibliotheque.documents[update-1]=st;
         System.out.println(st.getInfo());
     }
-    //Trier les documents par année ASC
     public static void TrierAnneeAsc(){
         if(Bibliotheque.documents==null){
             System.out.println("You don't have any item !");

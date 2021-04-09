@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class MenuUtil_Etu {
     public static void printAllEmp(){
-        if(Bibliotheque.emprunteursE==null && Bibliotheque.documents==null){
+        if(Bibliotheque.emprunteursE==null || Bibliotheque.documents==null){
             System.out.println("You do not have any Student\n");
             Menu.Menu_Principal();
         }
@@ -49,8 +49,6 @@ public class MenuUtil_Etu {
                 Etudiant st = Bibliotheque.emprunteursE[i];
                 if (st!=null &&  st.getCne().equalsIgnoreCase(find)) {
                     System.out.println(st.getInfo_E());
-                } else {
-                    System.out.println("Document not found\n");
                 }
             }
         }

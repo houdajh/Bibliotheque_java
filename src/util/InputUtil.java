@@ -50,6 +50,10 @@ public class InputUtil {
             String prenom = InputUtil.enterString("Enter first name\n");
             String profession = InputUtil.enterString("Enter profession\n");
             int nb_doc = InputUtil.enterInt("Enter number of books borrowed\n");
+            if(nb_doc>4){
+                System.out.println("number of document should not be more then 3");
+                return null;
+            }
             return new Etudiant(genre, nom, prenom, profession, nb_doc, cne, Bibliotheque.documents[c]);
         } else {
             System.out.println("ISBN not found");
@@ -67,6 +71,10 @@ public class InputUtil {
             String prenom = InputUtil.enterString("Enter first name\n");
             String profession = InputUtil.enterString("Enter profession\n");
             int nb_doc = InputUtil.enterInt("Enter number of books borrowed\n");
+            if(nb_doc>6){
+                System.out.println("number of document should not be more then 3");
+                return null;
+            }
             return new Professeur(genre, nom, prenom, profession, nb_doc, cin, Bibliotheque.documents[c]);
         } else {
             System.out.println("ISBN not found");
